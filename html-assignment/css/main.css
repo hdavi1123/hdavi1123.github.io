@@ -7,6 +7,21 @@ header, footer {
     background-color: lightblue;
 }
 
+.site-title {
+    color: palevioletred;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+.hobbies {
+    list-style-type: square;
+}
+
+.hobbies li:nth-child(odd) {
+    background-color: lightgray;
+}
 
 
 
