@@ -3,6 +3,10 @@ body {
   font-size: 18px;
 }
 
+header, footer {
+    background-color: lightblue;
+}
+
 
 
 
