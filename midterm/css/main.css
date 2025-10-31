@@ -1,0 +1,174 @@
+
+
+
+/* this first css code is to help the smoothness when a user clicks on the sub-titles at the top of the screen, so it wont just jump instanrly */
+html {
+    scroll-behavior: smooth;
+}
+
+/* this is telling all body sections what font to be and to have no specific margin and padding and to have a white background color */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+/* this is to help center the main content and to add a plain background color */
+main {
+    width: 80%; 
+    max-width: 960px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* this is for the horizontal lines */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+
+/* this is for the first main header */
+.site-header {
+    position: relative; 
+    text-align: center;
+    color: #fff;
+}
+/* this is for the header image */
+.header-image {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    display: block;
+}
+/* this is for the "tomorrow by together" header */
+.site-title {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 3em;
+    z-index: 2; 
+}
+
+/*  this is for the nav tags and the lists in them */
+nav {
+    background-color: #3a5f78; /* Light blue/teal background */
+    padding: 10px 0;
+    position: relative; 
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #333; 
+}
+
+/* this is for the image in the main story section */
+.article-image {
+    float: left; 
+    margin-right: 20px; 
+    margin-bottom: 10px;
+    width: 250px; 
+    height: auto;
+}
+
+/* these are for the facts lists */
+.facts ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+}
+
+.facts li {
+    margin-bottom: 5px;
+}
+
+
+ /*  these are for the content section */
+.contact-section form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* this is for the text box's */
+.form-group input[type="text"], 
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+
+/* these are for the three circle choices under the text boxes */
+.learnmore-section {
+    border: none; 
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.learnmore-section {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.learnmore-section label {
+    margin-right: 20px;
+}
+/* this is for the send button under the circle choices */
+.send-button {
+    background-color: #99ccee; 
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.send-button:hover {
+    background-color: #b3d5e6; 
+}
+
+/* this is for the footer at the bottom of the page */
+footer {
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    color: #000000;
+    clear: both; 
+}
