@@ -4,17 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davi1123 midterm</title>
+    <!-- here i linked the css page to this html page -->
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header= Use the image tag to add the image and position the site title on top of it-->
-    <!-- Article - Image should have the text wrapping around it -->
-    <!-- Facts - Use proper syntax for listing the facts-->
-    <!-- Form - All the inputs must be linked to the relative labels.-->
-    <!-- The overall design should be as close to provided mockup as possible.-->
-    <!-- HTML should be valid, well-formatted and containing comments-->
-    <!-- CSS should be valid, well-formatted and containing comments-->
-    <!-- Stage Commit and Push your changes to your repository-->
+<!-- here i started off with the head and linked the image folder and the header image and made a header-image class for that image.then i made a class for the title on top of that header image -->
+  <header class="site-header">
+        <img src="photos/header-image.jpg" alt="an image of a group of 5 people" class="header-image">
+        <h1 class="site-title">Tomorrow by Together</h1>
+<!-- here i have a nav tag with a list to have all of the sub titles/headings that are underneath the header image -->
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li> 
+                
+                <li><a href="#story">STORY</a></li>
+                
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- here is where i started the main and the first article that contains an id that links back to the story so that when someone clicks on the story sub-title i can have it be linked to the story section.  -->
+ <!-- then i have the header and another image source with the second image in the story section. then 2 paragraghs that will wrap around the image.  -->
+    <main>
+        <article id="story">
+            <h2>Who is Tomorrow by Together?</h2>
+
+            <img src="photos/small-image.jpg" alt="a closer look at the 5 people" class="article-image">
+
+            <p>Txt also known as Tomorrow by Togetjer is a 5-member kpop boygroup that was formed under BIGIT MUSIC which is a part of HYBE labels. The groups' five members are Soobin, Yeonjun, Beomgyu, Taehyun and Hueningkai! The group made their debut on March 4<sup>th</sup>, 2019. With their debut they released their first mini album called "The Dream Chapter: STAR." In the group there are not any set positions of the members, instead it often changed with each comeback, release and song.</p>
+
+            <p>The groups' name means 'Different people coming together under one dream in hopes of buidling a better tomorrow'. When the group greets themselves they always say "One! Dream! Hello we are TXT!" Since their debut in 2019 some of the members of branched off to work on their solo music as well as still participating in group activities. This included Yeonjun's first single "Ggum" and Beomgyu following with his first solo single "Panic"! </p>
+
+            <div style="clear: both;"></div>
+            <!-- this is a div that will allow the text to wrap around the image -->
+        </article>
+<!-- this is the first horizontal line i added -->
+        <hr>
+<!-- this is the first section i added that contains the facts for this page. It starts off with a class and then the header and then the list with a few facts -->
+        <section class="facts">
+            <h3>Facts About Tomorrow by Together!</h3>
+            <ul>
+                <li>Their fandom name is MOA (Moments of alwaysness).</li>
+                <li>TXT's leader is Soobin!</li>
+                <li>Beomgyu loves playing guitar, he even passed his Big Hit audition by showing off his guitar skills!</li>
+                <li>Huening Kai was born in Hawaii and can speak quite a few languages, including Mandarin, Korean and English.</li>
+            </ul>
+        </section>
+<!-- then this secontion ends and i add in another horizontal lines to separate the sections clearly -->
+        <hr>
+<!-- this is the second section that all the contact information. I started off with adding an id and a class for thos section.  -->
+        <section id="contact" class="contact-section">
+            <h3>Contact to learn more about TXT!</h3>
+            <form action="#" method="POST"> 
+                <!-- this action just tells the browser that nothing happens when you hit send -->
+                <!-- next is the div tag with mulitple class' for each of the text boxes. as well as each text box info, like the title above them. i also added a required tag so that it tells you all information is required when filling in the text boxs -->
+                <div class="form-group">
+                    <label for="your-name">Your Name</label>
+                    <input type="text" id="your-name" name="your-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="your-email">Your Email</label>
+                    <input type="email" id="your-email" name="your-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="your-message"> Your Message </label>
+                    <textarea id="message" name="your-message" required></textarea>
+                    
+                </div>
+                <!-- here i added a fieldset tag with a legand which is just a caption for the content. and then i added the three options below the text boxes with radio types and ids.  -->
+                <fieldset class="learnmore-section">
+                    <legend>Would you like to learn more about TXT?</legend>
+                    
+                    <input type="radio" id="leanrmore-yes" name="learnmore-txt" value="yes" checked>
+                    <label for="learnmore-yes">Yes</label>
+                    
+                    <input type="radio" id="learnmore-no" name="learnmore-txt" value="no">
+                    <label for="learnmore-no">No</label>
+                    
+                    <input type="radio" id="learnmore-maybe" name="learnmore-txt" value="maybe">
+                    <label for="learnmore-maybe">Maybe</label>
+
+                </fieldset>
+<!--  here i added the final button which is the send button under the three mini circle choices -->
+                <button type="submit" class="send-button">SEND</button>
+            </form>
+        </section>
+    </main>
+<!-- then i closed the main and added a footer and copyright info. then i checked the validator and updated my code acording to what it told me. -->
+    <footer>
+        <p>&copy; txt</p>
+    </footer>
+  
+  
+  
+  
+  
+  
+  
 
 </body>
 </html>
