@@ -1,22 +1,424 @@
+/* general stuff */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'open sans' sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* beginning of header section */
+
+.web-header {
+    background-color: #222;
+    width: 100%;
+
+}
+
+.header-top {
+    background-color: #c78c06;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    background-color: #c78c06;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.logo img {
+    max-width: 70px;
+}
 
 
+.main-navagation {
+    background-color:#222;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.main-navagation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-navagation li {
+    padding: 1.5rem;
+}
+
+.main-navagation a {
+    color: #c78c06;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
 
 
+.search-form {
+    display: flex;
+    padding: 1rem;
+    background-color: #222;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-form button {
+    padding: 0.75rem 1rem;
+    background-color: #222;
+    color: #c78c06;
+    border: 2px solid #c78c06;
+    
+    
+}
+
+/* end of header section */
+
+/* beginning of welcome section */
+
+section:first-of-type {
+    position: relative;
+}
+
+.main-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 34, 34, 0.7);
+    color: white;
+    padding: 2rem 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-banner h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-banner p {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c78c06;
+  color: #222;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 220px;
+  border: none;
+  margin-top: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #ffe6ac;
+}
+
+.arrow {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+/* ending of welcome section */
+
+/* beginning of about us section */
+
+.about-us {
+    background-color: #ffe6ac;
+    padding: 1.5rem;
+}
+
+.about-us img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    columns: black;
+}
+
+.about-content p {
+    color: #222;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* end of about us section */
+
+/* beginning od our services section */
+
+.services {
+    padding: 1.5rem;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.service-card {
+    background-color: #ffe6ac;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.service-card img {
+    width: 100%;
+    display: block;
+    
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.service-card p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+/* all buttons */ 
+
+.service-card .btn {
+    display: block;
+    align-items: center;
+    gap: 1rem;
+    background-color: #222;
+    color: white;
+    padding: 0.75rem 1.5rem;
+}
+
+.service-card .btn::after {
+  content: "▶";
+  margin-left: 2rem;
+}
+
+/*  end of serives */
+
+/* neginning of our vision */
+
+.vision {
+    position: relative;
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 3rem 1.5rem;
+}
+
+.vision::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(34, 34, 34, 0.7);
+}
+
+.vision * {
+    position: relative;
+    z-index: 1;
+}
+
+.vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.vision p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.vision .btn {
+    background-color: #222;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #c78c06;
+}
+
+.vision .btn::after {
+  content: "▶";
+  margin-left: 4rem;
+
+}
+
+/*  end of vision */
+
+/* start of our team */
+
+.team {
+    padding: 2rem 1.5rem;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+.team-member {
+    background-color: #ffe6ac;
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    width: 100%;
+    display: block;
+}
+
+.team-member h3 {
+    font-size: 1.8rem;
+    padding: 1rem 1rem 0.3rem;
+    color: #222;
+}
+
+.team-member h4 {
+    padding: 0 1rem 0.5rem;
+    font-weight: normal;
+    border-bottom: 2px solid #c78c06;
+    color: #222;
+}
 
 
+.team-member p {
+    padding: 1rem;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* end of our team */
+
+/* starrt of contact */
+
+.contact {
+    padding: 2rem 1.5rem;
+    background-color: white;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.contact h3 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: #222;
+}
 
 
+.contact-form label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    color: #222;
+}
 
+.contact-form input,.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #222;
+    margin-bottom: 1rem;
+    font-family: inherit;
+}
 
+.contact-form textarea{
+    min-height: 150px;
+}
 
+.contact-form button {
+    background-color: #222;
+    color: #c78c06;
+    border: 2px solid #c78c06;
+    padding: 0.5rem 1.25rem;
+    font-weight: bold;
+}
 
+/*  hours */
 
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+.hours th,.hours td {
+    border: 1px solid #222;
+    padding: 0.75rem;
+    text-align: left;
+}
 
+.hours th {
+    background-color: #ffe6ac;
+    font-weight: bold;
+}
 
+/* map */
+
+.location iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    margin-top: 1rem;
+}
+
+/* footer */
+
+.site-footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 2rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.site-footer a {
+    color: #c78c06;
+    text-decoration: underline;
+}
